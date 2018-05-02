@@ -9,5 +9,7 @@ services:
       - postgres:postgres
   postgres:
     image: postgres:latest  # this will use httpd:latest
+    hostname: 10.10.13.209
     environment:
       - POSTGRES_PASSWORD=aaa
+      - POSTGRES_USER=aaa
