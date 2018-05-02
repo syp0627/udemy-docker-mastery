@@ -11,9 +11,7 @@ services:
       - drupal-sites:/var/www/html/sites
       - drupal-themes:/var/www/html/themes
   postgres:
-    image: postgres:latest  # this will use httpd:latest
-    ports:
-      - '5432:5432' # expose 80 on host and sent to 80 in container
+    image: postgres:latest 
     environment:
       - POSTGRES_PASSWORD=aaa
 volumes:
